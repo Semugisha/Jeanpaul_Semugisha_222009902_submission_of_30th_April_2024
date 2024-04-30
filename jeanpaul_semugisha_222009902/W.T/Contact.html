@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Page</title>
+  <style>
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white; /* Changed text color to white */
+      background-color:black;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: beige;
+    }
+
+    /* Unvisited link */
+    a:link {
+      color: beige;
+    }
+
+    /* Hover effect */
+    a:hover {
+      background-color: beige;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: burlywood;
+    }
+
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px;
+      margin-top: 4px;
+    }
+
+    input.form-control {
+      margin-left: 500px;
+      padding: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      color: white; /* Changed text color to white */
+    }
+
+    th {
+      background-color: gray;
+    }
+
+    /* Header style */
+    header {
+      background-color: beige;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body style="background-image: url('./Images/23.jpg');background-repeat: no-repeat;background-size:cover;">
+  <!-- Header section -->
+  <header>
+    <h1>CONTACT</h1>
+    <!-- Search form -->
+    <form class="d-flex" role="search" action="search.php">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <!-- Navigation menu -->
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 10px;">
+        <img src="./Images/logo.jpg" width="90" height="60" alt="Logo">
+      </li>
+      <li style="display: inline; margin-right: 10px;"><a href="./HOME.html">HOME</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./About.html">ABOUT</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./CONTACT.html">CONTACT</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./course.php">COURSE</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./student.php">STUDENT</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./lecture.php">LECTURE</a></li>
+      <li style="display: inline; margin-right: 10px;"><a href="./examination.php">EXAMINATION</a></li>
+      <!-- Dropdown menu for settings -->
+      <li class="dropdown" style="display: inline; margin-right: 10px;">
+        <a href="#" style="padding: 10px; color:white; background-color: black; text-decoration: none; margin-right: 15px;">Settings</a>
+        <div class="dropdown-contents">
+          <!-- Links inside the dropdown menu -->
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  
+  <!-- Main content section -->
+  <section>
+    <!-- Contact information -->
+    <h2><bold><i>CONTACT US</i></bold></h2>
+    <ul>
+      <li><b>Address: Kigali City</b></li>
+      <li><b>Phone: +250 787666117</b></li>
+      <li><b>Email: info@PMS.com</b></li>
+    </ul>
+
+    <!-- Contact form -->
+    <form action="submit_contact" method="POST">
+      <label for="name"><b>Names:</b></label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email"><b>Email:</b></label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone"><b>Telephone:</b></label><br>
+      <input type="tel" id="phone" name="phone"><br>
+
+      <label for="message"><b>Message:</b></label><br>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+
+    <!-- Social media links -->
+    <p><i>Connect with us via:</p>
+    <ul>
+      <li><a href="https://www.twitter.com/OLP">Twitter</a></li>
+      <li><a href="https://www.facebook.com/OLP">Facebook</a></li>
+      <li><a href="https://www.instagram.com/OLP">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/OLP">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <center> 
+      <b><h2>UR CBE BIT &copy 2024 Designed by: @Jeanpaul Semugisha</h2></b>
+    </center>
+  </footer>
+</body>
+</html>
